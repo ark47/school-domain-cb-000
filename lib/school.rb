@@ -1,11 +1,10 @@
 # code here!
 class School
 
-  attr_accessor :name, :roster, :grade
+  attr_accessor :name, :roster
 
   def initialize(name)
     @name = name
-    @grades = grades
     @roster = {}
   end
 
@@ -14,7 +13,7 @@ class School
       roster[grade] << student
   end
 
-  def grade
+  def grade(grades)
     roster[grades]
   end
 
